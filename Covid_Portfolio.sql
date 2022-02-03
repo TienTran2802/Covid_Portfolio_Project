@@ -1,5 +1,4 @@
---as continents are listed in column location, remove locations that are continents (asia, africa, etc.), income classes(low,medium,high), 
---world in column location
+--as continents are listed in column location, remove locations that are continents (asia, africa, etc.), income classes(low,medium,high), world in column location
 
 
 --Display the percent of total deaths and total cases in locations including letters 'ia'
