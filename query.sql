@@ -1,4 +1,5 @@
---As continent names are listed in both column continent & location, remove continents (asia, africa, etc.), income classes(low, medium, high), world in column location where values in column continent are null
+--As continent names are listed in both column continent & location, remove continents (asia, africa, etc.), income classes(low, medium, high), 
+world in column location where values in column continent are null
 
 -- 1)
 --Display the percent of total deaths and total cases in locations including letters 'ia'
@@ -47,6 +48,7 @@ GROUP BY location, population
 ORDER BY 3 desc
 
 
+
 --3)
 --Display new cases per day and new deaths per day
 USE Covid_Portfolio
@@ -74,6 +76,8 @@ SELECT *,
 SUM(new_cases) OVER (ORDER BY date) as Cumulative_cases,
 SUM(CAST(new_deaths as float)) OVER (ORDER BY date) as Cumulative_deaths
 FROM CTE_cases_deaths
+
+
 
 --4)
 -- Display the highest case number and infection rate for each location
